@@ -1,0 +1,14 @@
+{
+    "name": "stevewest/setui",
+    "type": "fuel-module",
+    "license": "proprietary",
+    "description": "UI module for FuelPHP nested sets",
+    "authors": [
+        {
+            "name": "Steve West",
+            "email": "hello@west.systems"
+        }
+    ],
+    "require": {}
+}
+
