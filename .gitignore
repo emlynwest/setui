@@ -1,2 +1,4 @@
 /vendor/
 .idea
+codeception.yml
+tests/_output/*

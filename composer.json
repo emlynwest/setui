@@ -1,14 +1,22 @@
 {
-    "name": "stevewest/setui",
-    "type": "fuel-module",
-    "license": "proprietary",
-    "description": "UI module for FuelPHP nested sets",
-    "authors": [
-        {
-            "name": "Steve West",
-            "email": "hello@west.systems"
-        }
-    ],
-    "require": {}
+  "name": "stevewest/setui",
+  "type": "fuel-module",
+  "license": "proprietary",
+  "description": "UI module for FuelPHP nested sets",
+  "authors": [
+    {
+      "name": "Steve West",
+      "email": "steven.david.west@gmail.com"
+    }
+  ],
+  "require": {},
+  "require-dev": {
+    "codeception/codeception": "2.1.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "SetUI\\": "classes"
+    }
+  }
 }
 
