@@ -88,5 +88,5 @@ $tree = $menu->build($set);
 
 # Testing
 
-Currently the module is not unit tests due to the complications of testing FuelPHP
+Currently the module is not unit tested due to the complications of testing FuelPHP
 v1 modules outside of an application.
