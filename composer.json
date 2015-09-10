@@ -10,9 +10,6 @@
     }
   ],
   "require": {},
-  "require-dev": {
-    "codeception/codeception": "2.1.*"
-  },
   "autoload": {
     "psr-4": {
       "SetUI\\": "classes"
