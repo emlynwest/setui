@@ -37,3 +37,12 @@ to your `composer.json` to ensure the module is installed in the correct place.
     }
 }
 ```
+
+# Testing
+
+The module is set up to use Codeception for unit testing.
+
+After performing a `composer install` in the root of the module you will be able to run
+`./vendor/bin/codecept run unit` to run the unit tests, 
+`./vendor/bin/codecept run unit --coverage-html` can be used to generate code coverage 
+reports.
