@@ -8,6 +8,8 @@ Module to provide basic user interfaces for FuelPHP's nested sets model.
 
 Just run `composer require stevewest/setui`.
 
+Or
+
 Add the following to your `composer.json`:
 
 ```json
