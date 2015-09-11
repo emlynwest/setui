@@ -2,7 +2,8 @@
 /**
  * This file is part of the SetUI module.
  *
- * @license Proprietary
+ * @license MIT License
+ * @copyright 2015 Steve "uru" West
  * @author Steve "uru" West <steven.david.west@gmail.com>
  */
 

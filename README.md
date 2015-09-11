@@ -4,21 +4,19 @@ Module to provide basic user interfaces for FuelPHP's nested sets model.
 
 # Install instructions
 
+Just run `composer require stevewest/setui`.
+
 Add the following to your `composer.json`:
 
 ```json
 {
-    "repositories": [
-        { "type": "vcs", "url": "git@bitbucket.org:stevewest/setui.git" }
-    ],
     "require": {
         "stevewest/setui": "dev-master"
     },
 }
 ```
 
-Then just run a `composer update`! 
-> You will be asked for your BitBucket login if this is the first time installing.
+Then just run a `composer update`!
 
 After that all you will need to do is enable the module in your FuelPHP application's config file.
 
