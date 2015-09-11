@@ -11,6 +11,7 @@ namespace SetUI;
 
 use Arr;
 use Orm\Model_Nestedset;
+use Str;
 use Theme;
 use Uri;
 use View;
@@ -43,6 +44,8 @@ class Menu
 		'includeRoot' => false,
 		// What to prepend to the URL before it is passed to Uri::create()
 		'uriPrefix' => '',
+		// URI string that denotes the currently active node path (eg "parent/child/grandchild")
+		'activePath' => '',
 	];
 
 	public function __construct($config = [])
@@ -104,9 +107,14 @@ class Menu
 
 		$nameProperty = $this->config['nameProperty'];
 
+		$nodePath = $node->path($this->config['includeRoot'])->get();
+		// Build our branch's url
 		$path = Uri::create(
-			$this->config['uriPrefix'] . $node->path($this->config['includeRoot'])->get()
+			$this->config['uriPrefix'] . $nodePath
 		);
+
+		// Work out if this is an active branch or not
+		$active = Str::starts_with($this->config['activePath'], $nodePath);
 
 		return $this->loadView(
 			$this->config['leafView'],
@@ -114,6 +122,7 @@ class Menu
 				'url' => $path,
 				'name' => $node->{$nameProperty},
 				'branches' => $branchView,
+				'active' => $active,
 			]
 		);
 	}

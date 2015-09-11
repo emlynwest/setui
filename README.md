@@ -1,5 +1,7 @@
 # SetUI
 
+[![Latest Version](https://img.shields.io/packagist/v/stevewest/setui.svg?style=flat-square)](https://packagist.org/packages/stevewest/setui)
+
 Module to provide basic user interfaces for FuelPHP's nested sets model.
 
 # Install instructions
@@ -68,6 +70,9 @@ $config = [
     
     // What to prepend to the URL before it is passed to Uri::create()
     'uriPrefix' => '',
+    
+    // URI string that denotes the currently active node path (eg "parent/child/grandchild")
+    'activePath' => '',
 ];
 ```
 
@@ -83,6 +88,13 @@ $set = Model_Tree::forge()->set_tree_id(1)->root()->get_one();
 // $tree contains the top level View object
 $tree = $menu->build($set);
 ```
+
+## Note on path generation
+
+Path names are generated using nested sets' `path()` method, to ensure you are getting
+the correct paths then make sure your nested set's tree config has the `title_field`
+setting set to the correct column name. While SetUI does not care what this is it is
+often best to use a URL friendly property, such as one generated with the slug observer.
 
 # Testing
 
