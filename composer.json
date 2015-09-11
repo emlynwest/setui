@@ -1,5 +1,6 @@
 {
   "name": "stevewest/setui",
+  "keywords": ["fuel", "fuelphp", "nested sets", "UI", "user interface", "admin"],
   "type": "fuel-module",
   "license": "proprietary",
   "description": "UI module for FuelPHP nested sets",
