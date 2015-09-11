@@ -123,6 +123,7 @@ class Menu
 				'name' => $node->{$nameProperty},
 				'branches' => $branchView,
 				'active' => $active,
+				'node' => $node,
 			]
 		);
 	}

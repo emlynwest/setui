@@ -98,7 +98,23 @@ the correct paths then make sure your nested set's tree config has the `title_fi
 setting set to the correct column name. While SetUI does not care what this is it is
 often best to use a URL friendly property, such as one generated with the slug observer.
 
+# JavaScript
+
+The module also includes some basic javascript to allow a slightly nicer user interaction.
+To enable this you will want to symlink the files in `assets` to the appropriate asset
+folders. While you can copy the files, doing so means you will manually have to update
+the assets when the module is updated.
+
+Once the JS is included in the page it will automatically collapse non-active
+branches and allow branches to be opened and closed.
+
+jQuery 1.7 or higher is required. 
+
 # Testing
 
 Currently the module is not unit tested due to the complications of testing FuelPHP
 v1 modules outside of an application.
+
+# Acknowledgements
+
+Triangle icon by <a href="http://www.flaticon.com/authors/elegant-themes" title="Elegant Themes">Elegant Themes</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>
