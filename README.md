@@ -83,7 +83,7 @@ method.
 
 ```php
 <?php
-$menu = new \SetUI\Menu();
+$menu = new \SetUI\Menu($config);
 
 $set = Model_Tree::forge()->set_tree_id(1)->root()->get_one();
 
