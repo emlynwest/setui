@@ -6,8 +6,8 @@
   "description": "UI module for FuelPHP nested sets",
   "authors": [
     {
-      "name": "Steve West",
-      "email": "steven.david.west@gmail.com"
+      "name": "Emlyn West",
+      "email": "emlyn.west@gmail.com"
     }
   ],
   "require": {},
